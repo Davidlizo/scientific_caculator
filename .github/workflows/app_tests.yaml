@@ -1,0 +1,41 @@
+name: Android Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'latest'
+
+      - name: Install dependencies
+        run:  flutter pub get
+
+      - name: Run Linting tests
+        run:  flutter analyze
+
+      - name: Run Unit Tests
+        run:  flutter test
+
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Deploy to Appetize.io
+        uses: appetizeio/upload-apk-action@v1
+        with:
+          apiToken: ${{ secrets.APPETIZE_API_TOKEN }}
+          apkPath: build/app/outputs/flutter-apk/app-release.apk
+
