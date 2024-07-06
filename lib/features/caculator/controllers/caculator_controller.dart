@@ -66,7 +66,6 @@ class CalculatorController extends GetxController {
         result.value = evalResult.toStringAsFixed(8);
       }
     } catch (e) {
-      print('Error: $e');
       result.value = 'Error';
     }
   }

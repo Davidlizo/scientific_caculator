@@ -7,7 +7,7 @@ class ScientificButtonGrid extends StatelessWidget {
   final CalculatorController controller;
 
   const ScientificButtonGrid({super.key, required this.controller});
-  
+
   @override
   Widget build(BuildContext context) {
     List<String> buttons = [
@@ -49,7 +49,7 @@ class ScientificButtonGrid extends StatelessWidget {
     ];
 
     return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 5,
       ),
       itemCount: buttons.length,

@@ -6,7 +6,7 @@ class CalculatorButton extends StatelessWidget {
   final VoidCallback onTap;
   final bool hasBottomRightRadius;
 
-  CalculatorButton({
+  const CalculatorButton({super.key, 
     required this.label,
     required this.color,
     required this.onTap,
@@ -15,8 +15,8 @@ class CalculatorButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color textColor = Colors.white; // Default text color
-
+    Color textColor = Colors.white;
+    
     // Set text color based on label and button color
     if (label == 'C') {
       textColor = Colors.red;
@@ -32,7 +32,7 @@ class CalculatorButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.only(
-            bottomRight: hasBottomRightRadius ? Radius.circular(5.0) : Radius.zero,
+            bottomRight: hasBottomRightRadius ? const Radius.circular(5.0) : Radius.zero,
           ),
         ),
         child: Center(

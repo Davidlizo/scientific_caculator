@@ -38,7 +38,7 @@ class StandardButtonGrid extends StatelessWidget {
     ];
 
     return GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 4,
       ),
       itemCount: buttons.length,
