@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../controllers/caculator_controller.dart';
 import 'scientific_caculator_button.dart';
 
-class scientificButtonGrid extends StatelessWidget {
+class ScientificButtonGrid extends StatelessWidget {
   final CalculatorController controller;
 
-  scientificButtonGrid({required this.controller});
-
+  const ScientificButtonGrid({super.key, required this.controller});
+  
   @override
   Widget build(BuildContext context) {
     List<String> buttons = [

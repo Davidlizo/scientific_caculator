@@ -6,7 +6,7 @@ import 'standard_caculator_screen.dart';
 
 class ScientificCalculatorScreen extends StatelessWidget {
   final CalculatorController controller = Get.put(CalculatorController());
-
+const ScientificCalculatorScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

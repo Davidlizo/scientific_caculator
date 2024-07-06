@@ -6,7 +6,7 @@ import 'scientific_caculator_button.dart';
 class StandardButtonGrid extends StatelessWidget {
   final CalculatorController controller;
 
-  StandardButtonGrid({required this.controller});
+  const StandardButtonGrid({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
