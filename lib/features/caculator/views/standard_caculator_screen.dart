@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/caculator_controller.dart';
-import '../widgets/standard_button_grid.dart';
+import '../widgets/normal_button_grid.dart';
 import 'scientific_caculator_screen.dart';
 
 class StandardCaculatorScreen extends StatelessWidget {
@@ -65,7 +65,7 @@ class StandardCaculatorScreen extends StatelessWidget {
             ),
           ),
         
-          StandardButtonGrid(controller: controller),
+          NormalButtonGrid(controller: controller),
         ],
       ),
     );

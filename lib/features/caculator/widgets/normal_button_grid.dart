@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../controllers/caculator_controller.dart';
 import 'scientific_caculator_button.dart';
 
-class StandardButtonGrid extends StatelessWidget {
+class NormalButtonGrid extends StatelessWidget {
   final CalculatorController controller;
 
-  const StandardButtonGrid({super.key, required this.controller});
+  const NormalButtonGrid({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
