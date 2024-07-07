@@ -1,3 +1,16 @@
+import java.util.Properties
+
+// Load local.properties file
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { stream ->
+        localProperties.load(stream)
+    }
+} else {
+    throw new FileNotFoundException("local.properties file not found. Create it and define the location of the Android SDK and Flutter SDK.")
+}
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
