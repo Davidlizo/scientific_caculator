@@ -13,7 +13,7 @@ packages:
     dependency: transitive
     description: dart
     source: sdk
-    version: "0.3.1"
+    version: "0.3.2"
   analyzer:
     dependency: transitive
     description:
@@ -236,10 +236,10 @@ packages:
     dependency: transitive
     description:
       name: macros
-      sha256: "6245feb91dfa3693100d2e680f6c5614405b1623b555b4b3cba3cb88a3beb5c2"
+      sha256: "0acaed5d6b7eab89f63350bccd82119e6c602df0f391260d0e32b5e23db79536"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.2-main.3"
+    version: "0.1.2-main.4"
   matcher:
     dependency: transitive
     description:
@@ -510,5 +510,5 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.5.0-284.0.dev <4.0.0"
+  dart: ">=3.4.0-256.0.dev <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
